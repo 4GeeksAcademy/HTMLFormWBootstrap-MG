@@ -1,94 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> Instagram Feed </title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario</title>
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <!-- Para que funcionen los iconos -->
+    <script src="https://kit.fontawesome.com/e873b389f2.js" crossorigin="anonymous"></script>
+    <!-- **************************  -->
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- **************************  -->
+
+
 </head>
 
 <body>
-    <div>
-        <header>
-            <div class="container">
-                <h1>Breathe Code Photo Feed</h1>
-            </div>
-        </header>
-        <div class="container">
-            <div class="post">
-                <div class="post-header">
-                    <div>
-                        <h2>My first photo</h2>
-                    </div><div>
-                        <span>12/14</span>
+    <form action="" method="GET"></form>
+
+    <form action="" method="POST">
+        <div class="container-fluid m-4 p-2 w-75 mx-auto">
+            <div class="card d-flex">
+                <div class="card-header">
+                    <h3> Payment form example </h3>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger col-12" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label"> Card # </label>
+                            <input class="form-control" type="" placeholder="XXXXXXXXXXXXXXXX" />
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label"> Cvc # </label>
+                            <input class="form-control" type="number" placeholder="0000" />
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label"> Amount </label>
+                            $<input class="form-control" type="number" placeholder="Amount" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label"> First Name </label>
+                            <input class="form-control" type="text" />
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label"> Last Name </label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label"> City </label>
+                            <input class="form-control" type="text" />
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label"> State </label>
+                            <select class="form-control" name="states" placeholder="Pick a state">
+                                <option selected>Pick a state</option>
+                                <option value="florida">Florida</option>
+                                <option value="durazno">Durazno</option>
+                                <option value="montevideo">Montevideo</option>
+                                <option value="flores">Flores</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label"> Postal Code </label>
+                            <input class="form-control" type="number" />
+                        </div>
+                    </div>
+
+                    align-items-center
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label"> We accept: </label>
+                            <div class="col-5">
+                                <div class="bg-secondary form-control">
+                                    <input type="radio" id="cc-mastercard" name="card" />
+                                    <label for="cc-mastercard" id="cc"><i class="fa-brands fa-cc-mastercard ms-1"
+                                            style="color: #ffffff;"></i></label>
+                                    <input class="ms-3" type="radio" id="cc-visa" name="card" />
+                                    <label for="cc-visa"><i class="fa-brands fa-cc-visa ms-1"
+                                            style="color: #ffffff;"></i></label>
+                                    <input class="ms-3" type="radio" id="cc-diners-club" name="card" />
+                                    <label for="cc-diners-club"><i class="fa-brands fa-cc-diners-club ms-1"
+                                            style="color: #ffffff;"></i></label>
+                                    <input class="ms-3" type="radio" id="cc-amex" name="card" />
+                                    <label for="cc-amex"><i class="fa-brands fa-cc-amex ms-1"
+                                            style="color: #ffffff;"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label"> Message </label>
+                            <textarea class="form-control"></textarea>
+                            <div class="form-text">Add any notes here. </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1625576698957-f897b04f250d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aHVza3klMjBwdXBweXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"></img>
-                </div>
-                <div>
-                    <p>
-                        This is my first photo of the feed. This is a multi line comment for testing purposes. I am
-                        learning to code with <strong>#BreatheCode</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <div>
-                        <h2>Some cute thing</h2>
-                    </div><div>
-                        <span>12/17</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=700&q=60"></img>
-                </div>
-                <div>
-                    <p>
-                        The internet approves this cute dog... <strong>#BreatheCode</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <div>
-                        <h2>There's a paparazzi around</h2>
-                    </div><div>
-                        <span>12/17</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YSUyMHBlcnNvbiUyMGluJTIwYSUyMGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"></img>
-                </div>
-                <div>
-                    <p>
-                        This is me waiting for the screen to show my awesome first website made at
-                        <strong>#BreatheCode</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-header">
-                    <div>
-                        <h2>And of course... food!</h2>
-                    </div><div>
-                        <span>12/17</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1622973536968-3ead9e780960?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhZ2hldHRpfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60"></img>
-                </div>
-                <div>
-                    <p>
-                        Because no photo feed is cool without some food on it! <strong>#BreatheCode</strong>
-                    </p>
+                <div class="card-header d-flex">
+                    <button class="btn btn-secondary ms-auto"> Cancel </button>
+                    <button class="btn btn-primary ms-2" type="submit"> Send </button>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
-<footer>
-
-</footer>
 
 </html>
